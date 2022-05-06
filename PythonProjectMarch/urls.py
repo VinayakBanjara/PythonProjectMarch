@@ -16,10 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from app2.views import abc, Register
+from app2.views import abc, Register, otpVerification, login, urlshortner, generateShortURlApi
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('abc/', abc),
     path('Register/', Register),
+    path('otpVerification/', otpVerification),
+    path('login/', login),
+    path('urlshortner/', urlshortner),
+    path('generateShortURlApi/', generateShortURlApi),
+
 ]
